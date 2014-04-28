@@ -244,7 +244,7 @@ img{
 }
 
 .bkg_log{
-	background:rgb(177,34,28);
+	background:rgb(41,171,226);
 	width:100%;
 	height:2rem;
 	overflow:hidden;
@@ -307,8 +307,8 @@ img{
 /*  Nav  */
 
 #main_nav{
-	background:rgb(254,244,201);
-	border-bottom:0.125rem solid rgb(153,0,0);
+	background:rgb(161,220,85);
+	border-bottom:0.125rem solid rgb(140,198,63);
 }
 
 .main_nav{
@@ -461,7 +461,7 @@ img{
 /*  Footer  */
 
 #main_footer{
-	background:rgb(254,244,201);
+	background:rgb(161,220,85);
 }
 
 .main_footer{
@@ -488,7 +488,7 @@ img{
 .footer{
 	text-align:center;
 	font-family: 'sf_wasabiregular';
-	border-bottom:2rem rgb(177,34,28) solid;
+	border-bottom:2rem rgb(41,171,226) solid;
 }
 
 /*  ???  */
