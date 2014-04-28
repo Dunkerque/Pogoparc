@@ -38,21 +38,21 @@ h2{
 	font-family:'sf_wasabiregular';
 	font-size:1.8rem;
 	margin:1rem 0 1rem 1rem;
-	color:rgb(177,34,28);
+	color:rgb(140,198,63);
 }
 
 h3{
 	font-family:'sf_wasabiregular';
 	font-size:1.3rem;
 	margin:1rem 0 1rem 1rem;
-	color:rgb(177,34,28);
+	color:rgb(140,198,63);
 }
 
 h4{
 	font-family:'sf_wasabiregular';
 	font-size:1.1rem;
 	margin:1rem 0 1rem 1rem;
-	color:rgb(177,34,28);
+	color:rgb(140,198,63);
 }
 
 input[type="submit"]{
@@ -114,7 +114,7 @@ img{
 .main_div{
 	margin-top:1rem;
 	margin-bottom:1rem;
-	border:0.0625rem rgb(153,0,0) solid;
+	border:0.0625rem rgb(41,171,226) solid;
 	border-radius:0.3rem;
 }
 
@@ -221,7 +221,7 @@ img{
 }
 
 #main_header{
-	border-bottom:0.125rem solid rgb(153,0,0);
+	border-bottom:0.125rem solid rgb(140,198,63);
 }
 
 .header{
@@ -254,7 +254,7 @@ img{
 	background:url("../img/pogoparc2-1200.png") no-repeat center center / contain;
 	height:8rem;
 	margin-bottom:1rem;
-	border:0.0625rem solid rgb(153,0,0);
+	border:0.0625rem solid rgb(41,171,226);
 	border-radius:0.3rem;
 }
 
@@ -329,12 +329,12 @@ img{
 	width:100%;
 	line-height:2rem;
 	height:2rem;
-	color:rgb(177,34,28);
+	color:black;
 	transition:all 0.5s;
 }
 
 .main_nav>li>a:hover{
-	background:rgb(153,0,0);
+	background:rgb(140,198,63);
 	color:white;
 }
 
