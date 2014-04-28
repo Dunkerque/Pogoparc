@@ -1,0 +1,11 @@
+<div class="content main_div">
+	<?= $msg_error;?>
+	<p>Les Plats et menus</p>
+	<p>Nom du plat : </p>
+	<form action="index.php?<?= $url;?>" method="post">
+		<?php require('apps/showPlats.php');?>
+		<input type="submit" value="Valider la commande" name="order_plats">
+	</form>
+	<div style="float:right; background-color: red;width:50%;height: 5rem;">
+	</div>
+</div>

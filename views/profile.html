@@ -1,0 +1,30 @@
+<div class="content main_div overflow">
+	<p class="error_msg"><?=$msgU;?></p>
+	<div class="div_profil_infos">
+		<h3>Informations</h3>
+		<p class="profil_info"><span class="head_info">Login:</span> <?= $loginU;?></p>
+		<p class="profil_info"><span class="head_info">Email:</span> <?= $emailU; ?></p>
+		<p class="profil_info"><span class="head_info">Date d'inscription:</span> <?= $date; ?></p>
+	
+	</div>
+	<div class="div_profil_infos">
+		<h3>Présentation</h3>
+		<p class="profil_info"><span class="head_info">Nom:</span> <?= $nomU;?></p>
+		<p class="profil_info"><span class="head_info">Prenom:</span> <?= $prenomU;?></p>
+	</div>
+	<div class="div_profil_infos">
+		<h3>Coordonnées postale</h3>
+		<p class="profil_info"><span class="head_info">Adresse:</span> <?= $adresseU;?></p>
+		<p class="profil_info"><span class="head_info">Code postal:</span> <?= $codePostalU;?></p>
+		<p class="profil_info"><span class="head_info">Ville:</span> <?= $villeU;?></p>
+	</div>
+	<div class="profil_info_comp clear">
+		<h3 class="clear">Infos Complementaires:</h3>
+		<p class="profil_info_comp_txt"><?= $infoU; ?></p>
+	</div>
+	<p class="p_btn">
+		<button class="btn" onclick="window.location='index.php?page=edit_profile&id=<?=$idU;?>'">Modifier ses infos</button>
+		<button class="btn" onclick="window.location='index.php?page=edit_mdp&id=<?=$idU;?>'">Modifier son mot de passe</button>
+	</p>
+	<?php require("apps/profile_admin.php"); ?>
+</div>

@@ -1,0 +1,30 @@
+<div class="content main_div">
+	<h2>Création d'un compte:</h2>
+	<p class="error_msg"><?= $msg_register; ?></p>
+	<form action="index.php?page=register" method="POST">
+		<div class="form_register">
+			<h3>Identifiant</h3>
+			<p><input class="input_register" type="text" name="register_login" required placeholder="Login:" value="<?= $loginUForm;?>"/></p>
+			<p><input class="input_register" type="password" name="register_password" required placeholder="Password:" value="<?= $passwordUForm;?>"/></p>
+			<p><input class="input_register" type="email" name="register_email" required placeholder="Email:" value="<?= $emailUForm;?>"/></p>
+		</div>
+		<div class="form_register">
+			<h3>Présentation</h3>
+			<input class="input_register" type="text" name="register_nom" required placeholder="Nom:" value="<?= $nameUForm;?>"/>
+			<input class="input_register" type="text" name="register_prenom" required placeholder="Prénom:" value="<?= $surnameUForm;?>"/>
+			<input class="input_register" type="date" name="register_birthday" min="16/04/1914" max="16/04/2014" placeholder="Votre date de naissance:" value="<?= $dateUForm;?>"/>
+		</div>
+		<div class="form_register">
+			<h3>Coordonnées postale</h3>
+			<input class="input_register" type="text" name="register_adress" required placeholder="Adresse:" value="<?= $adressUForm;?>"/>
+			<input class="input_register" type="number" name="register_cp" required placeholder="Code Postal:" value="<?= $cpUForm;?>"/>
+			<input class="input_register" type="text" name="register_city" required placeholder="Ville:" value="<?= $cityUForm;?>"/>
+		</div>
+		<div class="register_infos clear">
+			<h4>Information complémentaires :</h4>
+			<textarea name="register_info_comp" cols="45" rows="4" value="" placeholder="digicode - bâtiments cours - étage - porte"><?= $infosUForm;?></textarea>
+		</div>
+		<p class="p_sub_register"><input class="sub_register" type="submit" value="Valider" name="form_user"/></p>
+	</form>
+</div>
+

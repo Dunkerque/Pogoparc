@@ -1,0 +1,12 @@
+<div class="content main_div">
+	<h2>Création des menus:</h2>
+	<p class="error_msg"><?= $msg_menu; ?></p>
+	<form action="index.php?page=edit_menu" method="POST">
+		<div class="form_edit_menu">
+			<p><input class="input_edit_menu" type="text" name="nom_menu" required placeholder="Nom du menu" value="<?= $edit_nom_menu; ?>"/></p>
+			<?php require("views/scroll_menus.html");?>
+			<p><input class="input_edit_menu" type="text" name="tarif_menu" required placeholder="Tarif du menu" value="<?= $edit_tarif_menu; ?>"/></p>
+		</div>
+		<p class="p_sub_register"><input class="sub_edit_menu" type="submit" value="Valider" name="form_edit_menu"/></p>
+	</form>
+</div>	

@@ -1,0 +1,13 @@
+<div class="content main_div">
+	<h2>Création des plats:</h2>
+	<p class="error_msg"><?= $msg_plats; ?></p>
+	<form action="index.php?page=edit_plats" method="POST">
+		<div class="form_edit_plats">
+			<p><input class="input_edit_plats" type="text" name="nom_plat" required placeholder="Nom du plat" value="<?= $edit_nom_plats; ?>"/></p>
+			<p><input class="input_edit_plats" type="text" name="contenu_plat" required placeholder="Contenu du plat" value="<?= $edit_contenu_plats; ?>"/></p>
+			<p><input class="input_edit_plats" type="text" name="tarif_plat" required placeholder="Tarif du plat" value="<?= $edit_tarif_plats; ?>"/></p>
+		</div>
+
+		<p class="p_sub_register"><input class="sub_edit_plats" type="submit" value="Valider" name="form_edit_plats"/></p>
+	</form>
+</div>

@@ -1,0 +1,27 @@
+<div class="content main_div overflow">
+	<h2>Modifier ses informations</h2>
+	<p class="error_msg"><?=$msg;?></p>
+	<form action="index.php?page=edit_profile&id=<?=$idU?>" method="post">
+		<div class="div_profil_infos">
+		<h3>Informations</h3>
+		<p class="profil_info"><span class="head_info">Adresse Email : </span><input class="input" type="text" value="<?=$emailUForm;?>" name="update_email" required /></p>
+		</div>
+		<div class="div_profil_infos">
+			<h3>Présentation</h3>
+			<p class="profil_info"><span class="head_info">Nom : </span><input class="input" type="text" value="<?=$nameUForm;?>" name="update_name" required /></p> 
+			<p class="profil_info"><span class="head_info">Prénom : </span><input class="input" type="text" value="<?=$surnameUForm;?>" name="update_surname" required /></p>
+		</div>
+		<div class="div_profil_infos">
+			<h3>Coordonnées postale</h3>
+			<p class="profil_info"><span class="head_info">Adresse : </span><input class="input" type="text" value="<?=$adressUForm;?>" name="update_adress" required /></p>
+			<p class="profil_info"><span class="head_info">Code postal : </span><input class="input" type="text" value="<?=$cpUForm;?>" name="update_cp" required /></p>
+			<p class="profil_info"><span class="head_info">Ville : </span><input class="input" type="text" value="<?=$cityUForm;?>" name="update_city" required /></p>
+		</div>
+		<div class="profil_info_comp clear">
+			<h3 class="clear">Infos Complementaires:</h3>
+			<p><textarea name="update_info_comp" cols="50" rows="10"><?=$infosUForm;?></textarea></p>
+		</div>
+		<p class="p_btn"><input class="sub_medium" name="update_profil_sub" type="submit"></p>
+	</form>
+	<p class="p_btn"><button class="btn" onclick="window.location='index.php?page=profile&id=<?=$idU;?>'">Annuler</button></p>
+</div>

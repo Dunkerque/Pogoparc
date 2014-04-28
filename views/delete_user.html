@@ -1,0 +1,29 @@
+<div class="content main_div">
+	<h2>Suppression utilisateur</h2>
+	<div class="div_profil_infos">
+		<h3>Informations</h3>
+		<p class="profil_info"><span class="head_info">Login:</span> <?= $loginSU;?></p>
+		<p class="profil_info"><span class="head_info">Email:</span> <?= $emailSU; ?></p>
+		<p class="profil_info"><span class="head_info">Date d'inscription:</span> <?= $registerDateSU; ?></p>
+	</div>
+	<div class="div_profil_infos">
+		<h3>Présentation</h3>
+		<p class="profil_info"><span class="head_info">Nom:</span> <?= $nameSU;?></p>
+		<p class="profil_info"><span class="head_info">Prenom:</span> <?= $surnameSU;?></p>
+	</div>
+	<div class="div_profil_infos">
+		<h3>Coordonnées postale</h3>
+		<p class="profil_info"><span class="head_info">Adresse:</span> <?= $adressSU;?></p>
+		<p class="profil_info"><span class="head_info">Code postal:</span> <?= $cpSU;?></p>
+		<p class="profil_info"><span class="head_info">Ville:</span> <?= $citySU;?></p>
+	</div>
+	<div class="profil_info_comp clear">
+		<h3 class="clear">Infos Complementaires:</h3>
+		<p class="profil_info_comp_txt"><?=$infosSU;?></p>
+	</div>
+	<p class="center"><button class="btn_large" onclick="window.location='index.php?page=edit_users'">Annuler</button></p>
+	<form action="index.php?page=delete_user&iduser=<?=$idUser?>" method="post">
+		<p class="alert head_info">--! Etes vous sûr de vouloir supprimer l'utilisateur? !--</p>
+		<p class="p_btn"><input class="sub_small" type="submit" name="delete_user_sub" value="Supprimer"></p>
+	</form>
+</div>

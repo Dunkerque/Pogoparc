@@ -1,0 +1,27 @@
+<div class="content main_div">
+	<h2>Modification utilisateur</h2>
+	<form action="index.php?page=edit_user&iduser=<?=$idUser?>" method="post">
+		<div class="div_profil_infos">
+		<h3>Informations</h3>
+		<p class="profil_info"><span class="head_info">Login : </span><input class="input" type="text" value="<?=$resSUser["login"];?>" name="update_login" required /></p>
+		<p class="profil_info"><span class="head_info">Adresse Email : </span><input class="input" type="text" value="<?=$resSUser["email"];?>" name="update_email" required /></p>
+		</div>
+		<div class="div_profil_infos">
+			<h3>Présentation</h3>
+			<p class="profil_info"><span class="head_info">Nom : </span><input class="input" type="text" value="<?=$resSUser["nom"];?>" name="update_name" required /></p>
+			<p class="profil_info"><span class="head_info">Prénom : </span><input class="input" type="text" value="<?=$resSUser["prenom"];?>" name="update_surname" required /></p>
+		</div>
+		<div class="div_profil_infos">
+			<h3>Coordonnées postale</h3>
+			<p class="profil_info"><span class="head_info">Adresse : </span><input class="input" type="text" value="<?=$resSUser["adresse"];?>" name="update_adress" required /></p>
+			<p class="profil_info"><span class="head_info">Code postal : </span><input class="input" type="text" value="<?=$resSUser["code_postal"];?>" name="update_cp" required /></p>
+			<p class="profil_info"><span class="head_info">Ville : </span><input class="input" type="text" value="<?=$resSUser["ville"];?>" name="update_city" required /></p>
+		</div>
+		<div class="profil_info_comp clear">
+			<h3 class="clear">Infos Complementaires:</h3>
+			<p><textarea name="update_info_comp" cols="50" rows="10"><?=$userEdit->getInfos();?></textarea></p>
+		</div>
+		<p class="p_btn"><input class="sub_medium" name="update_user_sub" type="submit"></p>
+	</form>
+	<p class="p_btn"><button class="btn" onclick="window.location='index.php?page=edit_users'">Annuler</button></p>
+</div>
